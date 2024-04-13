@@ -1,0 +1,47 @@
+.modal {
+  position: fixed;
+  z-index: 777;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-container {
+  position: relative;
+  padding: 1rem;
+  min-width: 320px;
+  max-width: 400px;
+  min-height: 200px;
+  max-height: 500px;
+  /* overflow-y: auto; */
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: #cfc9c9 0 0 7px 1px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  background: transparent;
+  border-style: none;
+  border-radius: 0 7px 0 0;
+  width: 28px;
+}
+
+.modal-close:hover {
+  background-color: rgba(128, 128, 128, 0.521);
+  color: #fff;
+}
